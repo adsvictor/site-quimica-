@@ -777,6 +777,53 @@ const CHECKOUT_LINK_COMPLETE = "https://pay.cakto.com.br/359zscs_1071523"; // Pa
 document.querySelectorAll('[data-plan="basic"]').forEach(el => el.href = CHECKOUT_LINK_BASIC);
 document.querySelectorAll('[data-plan="complete"]').forEach(el => el.href = CHECKOUT_LINK_COMPLETE);
 
+/* ==========================================================
+   META PIXEL — EVENTOS PADRÃO
+   ========================================================== */
+
+// ViewContent: dispara uma única vez quando a seção de Planos entra na tela
+const planosSection = document.getElementById('planos');
+if (planosSection && 'IntersectionObserver' in window && typeof fbq === 'function') {
+  const ioPlanos = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        fbq('track', 'ViewContent', {
+          content_name: 'Seção de Planos',
+          content_category: 'Atividades de Química'
+        });
+        obs.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  ioPlanos.observe(planosSection);
+}
+
+// InitiateCheckout: dispara ao clicar em cada botão de plano, com o valor correspondente
+document.querySelectorAll('[data-plan="basic"]').forEach(el => {
+  el.addEventListener('click', () => {
+    if (typeof fbq === 'function') {
+      fbq('track', 'InitiateCheckout', {
+        value: 15.00,
+        currency: 'BRL',
+        content_name: 'Material Essencial',
+        content_category: 'Atividades de Química'
+      });
+    }
+  });
+});
+document.querySelectorAll('[data-plan="complete"]').forEach(el => {
+  el.addEventListener('click', () => {
+    if (typeof fbq === 'function') {
+      fbq('track', 'InitiateCheckout', {
+        value: 27.00,
+        currency: 'BRL',
+        content_name: 'Pacote Completo',
+        content_category: 'Atividades de Química'
+      });
+    }
+  });
+});
+
 const hdr = document.getElementById('hdr');
 window.addEventListener('scroll', () => { hdr.classList.toggle('scrolled', window.scrollY > 12); }, { passive: true });
 
